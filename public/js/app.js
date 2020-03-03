@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit', (e)=>{
         } else {
             // console.log(data.forecast)
             // console.log(data.location)
-            messageOne.textContent = data.forecast.summary + data.forecast.temperature + data.forecast.precipProbability
+            messageOne.textContent = data.forecast.summary + data.forecast.temperature + data.forecast.precipProbability + 'temperatureHigh is :' + data.forecast.temperatureHigh + 'temperatureLow is :' + data.forecast.temperatureLow 
             messageTwo.textContent = data.location
             }
     })
